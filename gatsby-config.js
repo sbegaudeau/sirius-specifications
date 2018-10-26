@@ -16,6 +16,14 @@ module.exports = {
         icon: 'src/images/sirius-icon.png', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `specifications`,
+        path: `${__dirname}/src/specifications`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-offline',
   ],
 };
